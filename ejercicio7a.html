@@ -1,0 +1,124 @@
+<html>
+<head>
+	<title>Ejercicio 7 a</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<div class="container">
+		<h1>Alta alumno</h1>
+		<form action="form.php" method="GET">
+			<!-- <fieldset> -->
+				<!-- <legend>Escriba sus datos para alta nueva</legend> -->
+				<label for="nombre">nombre</label><input type="text" name="nombre" required autofocus>
+				<label for="apellido">apellido</label><input type="text" name="apellido" required>
+				<label for="ciudad">ciudad</label><input type="text" name="ciudad">
+				<label for="mail">mail</label><input type="email" name="email" placeholder="Escribe tu email con un formato válido">
+				<label for="provincia">provincia</label><input type="text" name="provincia">
+				<label for="lenguaje">lenguaje</label><select name="lenguaje" id="">
+					<!-- <optgroup label="Normal"></optgroup> -->
+						<option value="php">PHP</option>
+						<option value="java">Java</option>
+					<!-- </optgroup> -->
+					<!-- <optgroup label="Premium"> -->
+						<option value="python">Python</option>
+						<option value="asp">asp</option>
+					<!-- </optgroup> -->
+				</select>
+				<label for="color">Color</label><input type="color" name="color">
+				<label for="zipCode">Código postal</label><input type="text" pattern="[0-9]{5}">
+				<label for="fechaNacimiento">Fecha de nacimiento</label><input type="date" name="fechaNacimiento">
+				<label for="comentarios">comentarios</label><textarea name="comentarios" id="" cols="30" rows="10"></textarea>
+				<input type="submit" value="Enviar">
+				<input type="reset" value="Borrar">
+			<!-- </fieldset> -->
+		</form>
+	</div>
+	
+</body>
+<style>
+	h1 {
+		font-family: calibri;
+		text-align: center;
+		background-color: #FFC700;
+		border-radius: 15px;
+		padding: 0;
+		border: 2px solid #f00;
+	}
+	form {
+		padding: 0 4%;
+
+	}
+	label {
+		width: 20%;
+		float: left;
+		margin-bottom: 1em;
+		font-size: 14px;
+		font-weight: 800;
+	}
+	input {
+		width: 80%;
+		float: left;
+		display: block;
+		margin-bottom: 1em;
+	}
+	select {
+		width: 80%;
+		float: left;
+		display: block;
+		margin-bottom: 1em;
+	}
+	textarea {
+		width: 100%;
+		margin-bottom: 1em;
+	}
+	input[type="submit"] {
+		width: 100%;
+	  	font-family: Verdana, Geneva, Tahoma, Arial, Helvetica, sans-serif;
+		/*display: inline-block;*/
+		color: #FFFFFF;
+		background-color: #8AC007;
+		font-size: 15px;
+		text-align: center;
+		padding: 5px 16px;
+		/*text-decoration: none;*/
+/*		margin-left: 0;
+		margin-top: 0px;
+		margin-bottom: 5px;*/
+		border: 1px solid #8AC007;
+		white-space: nowrap;
+		box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+		border-radius: 15px;
+	}
+	input[type="reset"] {
+		width: 100%;
+	  	font-family: Verdana, Geneva, Tahoma, Arial, Helvetica, sans-serif;
+		/*display: inline-block;*/
+		color: #FFFFFF;
+		background-color: #f00;
+		font-size: 15px;
+		text-align: center;
+		padding: 5px 16px;
+		/*text-decoration: none;*/
+/*		margin-left: 0;
+		margin-top: 0px;
+		margin-bottom: 5px;*/
+		border: 1px solid #AB0707;
+		white-space: nowrap;
+		box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+		border-radius: 15px;
+	}
+	.container {
+		width: 500px;
+		height: auto;
+		background-color: #fff;
+		background-image: url('images/pat3.png');
+		overflow: auto;
+		margin: 0 auto;
+		border-radius: 15px;
+		box-shadow: 10px 10px 5px #939393;
+	}
+	body {
+		background-color: #8BB9FF;
+	}
+</style>
+</html>

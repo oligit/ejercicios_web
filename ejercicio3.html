@@ -1,0 +1,185 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Ejercicio 3</title>
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="960.css">
+	<link rel="stylesheet" href="text.css">
+</head>
+<body>
+<div class="container_12">
+
+	<h1 class="prefix_10">Music On</h1>
+	<header class="grid_12">
+	<nav class="">
+		<ul class="">
+			<li class="grid_3">Home</li>
+			<li class="grid_3">Destacados</li>
+			<li class="grid_3">Galería</li>
+			<li class="grid_3">About</li>
+		</ul>
+	</header>
+	</nav>
+	<aside class="grid_2">
+		<ul>
+			<li class="grid_2"><a href="">Hard Techno</a></li>
+			<li class="grid_2"><a href="">Techno</a></li>
+			<li class="grid_2"><a href="">Tech House</a></li>
+			<li class="grid_2"><a href="">Minimal</a></li>
+			<li class="grid_2"><a href="">Electro House</a></li>
+		</ul>
+	</aside>
+	<article class="grid_10">
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus fermentum sem non venenatis rhoncus. In laoreet rhoncus enim vel viverra. Phasellus tincidunt, nisi sed porttitor egestas, nunc felis varius purus, quis tempus dolor diam ac mauris. Proin posuere lectus risus, eget facilisis quam dapibus ut. Nullam semper consectetur ligula et blandit. Nullam id turpis convallis, rhoncus nisi eu, elementum massa. Pellentesque eget ante eget lectus varius tristique. Duis pellentesque nisl non finibus molestie. Proin vel nisi at odio finibus commodo eu in velit. Nullam vestibulum ante elementum dui congue blandit. In elementum aliquam mauris, vel rhoncus felis tempor vel. Vivamus mollis risus ligula, sit amet interdum ligula sollicitudin in. Vestibulum eget arcu euismod, feugiat nisi eget, tincidunt nisi. Nam mattis odio vitae mauris facilisis gravida sit amet sed orci. Donec sed lobortis odio. Cras libero eros, consequat vitae vulputate at, ullamcorper eu erat.
+		</p>
+		<p>
+			Donec et finibus ipsum, eget ultrices augue. Phasellus fringilla arcu at sapien aliquam mollis. Donec euismod accumsan lectus quis aliquam. Pellentesque non mi convallis, ultrices nisl ultrices, convallis lectus. Sed pretium est nulla, ac venenatis orci pretium eu. Curabitur sagittis eros et nisl auctor, nec fringilla quam porta. Quisque laoreet magna id sapien vestibulum interdum. Vivamus volutpat aliquet felis, in viverra nunc faucibus sit amet. Quisque molestie enim nec purus pulvinar ultricies. Ut non hendrerit mauris, ut ornare sapien. Nunc eget arcu massa. Ut aliquet ac ipsum vel accumsan.
+		</p>
+		<p>
+			Aliquam feugiat est in enim lobortis, pretium commodo orci tincidunt. Fusce posuere bibendum bibendum. Phasellus cursus eleifend mi, sit amet eleifend nisi feugiat sed. Curabitur aliquam enim quis tincidunt interdum. Aenean in nibh quis sapien hendrerit fermentum at sed nisi. Curabitur nulla sem, porttitor vitae feugiat eget, egestas non ex. Sed orci diam, pharetra eget accumsan eget, fringilla ac dolor. Praesent ut hendrerit mi, vel varius magna. Mauris placerat malesuada nulla ac ultrices. Pellentesque ac risus dapibus, lacinia eros vitae, imperdiet est. Etiam pellentesque lorem ac ante euismod, sit amet viverra ex semper. Aliquam ac iaculis tortor, eget mollis augue. Donec viverra nisl vitae orci semper, sed venenatis sapien viverra. Morbi mi nibh, ultrices sit amet sagittis eget, pharetra nec libero. Donec quis neque luctus, consequat magna a, porttitor mi
+		</p>
+	</article>
+	<footer class="grid_12">
+		<span class="prefix_10"><strong>Jorge Olivas</strong></span>
+	</footer>
+</div>
+</body>
+<style>
+	aside.grid_2{
+		/*background-color: #1848C2;*/
+
+	}
+	aside ul li {
+		margin: 0 !important;
+	}
+	li.grid_2{
+		/*background-color: #3EA4E4;*/
+	}
+	li.grid_2:hover{
+		/*background-color: #3B98D3;*/
+	}
+	.grid_10 {
+		/*background-color: #087DA9;*/
+		margin: 0;
+	}
+	.grid_12 {
+		/*background-color: #0036FF;*/
+	}
+	.grid_3 {
+		text-align: center;
+		margin: 0;
+		/*background-color: #02AEF5;*/
+	}
+	.grid_3:hover{
+		/*background-color: #0286F5;*/
+	}
+	body {
+		/*background-color: #B6CBFF;*/
+	}
+	* {
+
+	}
+
+	aside {
+		  border-radius: 15px;
+		  box-shadow: 5px;
+		  background-color: #E1E1E1;
+		 
+		  height: 100%;
+		  float: left;
+		  margin-right: 1%;
+	}
+	aside ul, nav ul {
+		list-style: none;
+	}
+	aside ul li {
+		height: 20%;
+		border: 1px solid #000000;
+	}
+	aside ul li:hover {
+		background-color: #828282;	
+	}
+	aside ul {
+		padding: 0;
+		margin-top: 0;	
+	}
+	aside>ul>li:first-child{
+		border-radius: 15px 15px 0 0;	
+	}
+	aside>ul>li:last-child{
+		border-radius: 0 0 15px 15px;	
+	}
+	aside ul li a {
+		text-decoration: none;			
+		color: #000;
+		font-family: calibri;
+	}
+	/* nav **********************************************/
+/*	nav {
+
+	}
+	nav ul {
+	  	margin-top: 0;
+  		margin-bottom: 0;
+  		height: 42px;
+	}
+	nav ul li {
+		float: left;
+		padding: 0 10%;
+		height: 100%;
+		padding-top: 20px;
+	}
+	nav ul li:hover {
+		background-color: #949494;
+	}
+	nav ul li a {
+		color: #fff;
+		font-family: calibri;
+		text-decoration: none;
+	}*/
+	/* header **********************************************/
+	header {
+		height: auto;
+		top: 0;
+		left: 0;
+		overflow: auto;
+		background: linear-gradient(#000000, #4F4F4F);
+		color: #fff;
+		border-radius: 150px;
+		margin-bottom: 1%;
+	}
+	/* article **********************************************/
+	article {
+		  float: left;
+		  height: 100%;
+		  background-color: #C0C0C0;
+		  border-radius: 15px;
+		  padding: 0 1%;
+		  margin-bottom: inherit;
+	}
+	h1 {
+		font-family: Market_Deco;
+		/*margin-left: 40%;
+		margin-right: 40%;*/
+		border-bottom: 2px solid #000;
+	}
+	@font-face {
+		font-family: "Market_Deco";  	  
+		src: url("../fonts/Market_Deco.ttf"); 	
+	}
+	/*footer **********************************************/
+	footer {
+		background: -webkit-linear-gradient(#000000, #474747);
+		background: -o-linear-gradient(#000000, #474747);
+		background: linear-gradient(#000000, #474747);
+		border-radius: 15px;	
+		color: #fff;	
+		clear: both;
+		margin-top: 15px;
+	}
+	::selection{
+		background-color: #00C0FF;
+	}
+</style>	
+</html>

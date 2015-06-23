@@ -1,0 +1,260 @@
+<!-- navy, steel blue, sylver, white -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejercicio 7 c</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h1>Proyecto final en js: Formulario</h1>
+	<form action="" method="GET">
+		<fieldset>
+		<legend>Datos del alumno</legend>
+		<!-- <div class="float-left width-40"> -->
+			<fieldset class="width-50 float-left clear-both"> <!-- identificacion -->
+				<legend>Identificación</legend>
+				<label for="email" class="clear-both">Cuenta de correo</label>
+				<input type="email" name="email" placeholder="example@domain.com" class="clear-both">
+				<label for="password" class="clear-both">Introduzca su clave de acceso</label>
+				<input type="password" name="password" class="clear-both">
+				<label for="password2" class="clear-both">Reintroduzca su clave de acceso</label>
+				<input type="password" name="password2" class="clear-both">
+			</fieldset>
+			<fieldset class="width-50 float-right clear-both"> <!-- datos personales -->
+				<legend>Datos personales</legend>
+				<label for="nombre">Nombre</label><input type="text" name="nombre">
+				<label for="ape1">Primer apellido</label><input type="text" name="ape1">
+				<label for="ape2">Segundo apellido</label><input type="text" name="ape2">
+				<fieldset class="nacimiento clear-both width-95">
+					<legend>Fecha de nacimiento</legend>
+					<label for="dia" class="inline clear-both">Día</label>
+					<input class="inline clear-both" type="number" name="dia" min="1" max="31">
+					<label for="mes" class="inline clear-both">Mes</label>
+					<input class="inline clear-both" type="number" name="mes" min="1" max="12">
+					<label for="year" class="inline clear-both">Año</label>
+					<input class="inline clear-both" type="number" name="year" min="1997" max="2015">
+				</fieldset>
+			</fieldset>
+			<fieldset class="width-50 float-left clear-both"> <!-- curso -->
+				<legend>Curso</legend>
+				<div class="radio-container">
+					<input type="radio" value="Programador web"> Programador web <br>
+					<input type="radio" value="Programador de sistemas"> Programador de sistemas <br>
+					<input type="radio" value="Programador de objetos"> Programador de objetos <br>
+				</div>
+				<div class="picker-container">
+					<select name="lenguaje" id="" multiple>
+						<option value="html">html</option>
+						<option value="php">php</option>
+						<option value="javaScript">javaScript</option>
+						<option value="css">css</option>
+					</select>
+				</div>
+			</fieldset>
+			
+		<!-- </div> -->
+		<!-- <div class="float-left width-40"> -->
+			<fieldset class="width-50 float-right clear-both">
+				<legend>Aficiones</legend>
+				<div class="checkI">
+					<input type="checkbox" name="musica">
+					<label class="checklbl" for="musica">Música</label><br>
+					<input type="checkbox" name="viajar">
+					<label class="checklbl" for="viajar">viajar</label><br>
+					<input type="checkbox" name="pintura">
+					<label class="checklbl" for="pintura">pintura</label><br>
+					<input type="checkbox" name="fotografia">
+					<label class="checklbl" for="fotografia">fotografia</label>
+				</div>
+				<div class="checkD">
+					<input type="checkbox" name="cine">
+					<label class="checklbl" for="cine">cine</label><br>
+					<input type="checkbox" name="lectura">
+					<label class="checklbl" for="lectura">lectura</label><br>
+					<input type="checkbox" name="deporte">
+					<label class="checklbl" for="deporte">deporte</label><br>
+					<input type="checkbox" name="baile">
+					<label class="checklbl" for="baile">baile</label>
+				</div>
+			</fieldset>
+			<fieldset class="width-50 float-left clear-both"> <!-- botones -->
+				<input type="submit" value="Enviar datos">
+				<input type="reset" value="Restablecer valores">
+			</fieldset>
+			<fieldset class="width-50 float-left clear-both">
+				<p>En Madrid, el Viernes 12 de Junio de 2015</p>
+			</fieldset>
+		<!-- </div> -->
+	</fieldset>
+	</form>
+	
+	<footer><p class="footer">&copy; Jorge Olivas Agudo</p></footer>
+</body>
+<style>
+	.nacimiento {
+		width: 95% !important;
+	}
+
+	p.footer {
+		margin-left: 2%;
+		color: #000;
+		font-family: calibri;
+	}
+	footer {
+		width: 100%;
+		background-color: silver;
+		/*border: 1px solid #5B5B5B;*/
+		height: auto;
+	}
+	.checkI {
+		width: 50%;
+		float: left;/*
+		background-color: #ff0;*/
+	}
+	.checkD {
+		width: 50%;
+		float: left;
+		/*background-color: #fff;*/
+	}
+	.picker-container {
+		width: 15%;
+		float: left;
+		display: block;
+		margin-right: 10%;
+		/*margin-left: 1%;*/
+	}
+	.radio-container {
+		width: 60%;
+		display: block;
+		float: left;
+		margin-right: 1px;
+	}
+	label.checklbl {
+/*		width: auto;
+		float: left;
+		display: block;*/
+		float: none;
+		width: auto;
+	}
+	p {
+		color: #fff;
+	}
+	body {
+		background-color: silver;
+	}
+	legend {
+		background-color: navy;
+		border: 1px solid #fff;
+		color: #fff; 
+	}
+	label {
+		color: #fff;
+		/*margin-right: 10%;*/
+		width: 20%;
+	}
+/*	input{
+		display: block;
+		float: left;
+	}*/
+	label{
+		width: 49%;
+		float: left;
+	}
+	input[type="checkbox"] {
+/*		width: auto;
+		float: left;
+		display: block;*/
+	}
+	input[type="submit"]{
+		margin-right: 1em;
+	}
+	input[type="email"]{
+		display: block;
+		width: 49%;
+	}
+	input[type="number"] {
+		display: inline;
+	}
+	/*.inline{
+		display: inline !important;
+	}*/
+	fieldset>div>fieldset>fieldset>label {
+		width: auto;
+		float: none;
+		margin-right: 2px;
+	}
+	input[type="password"]{
+		display: block;
+		width: 20%;
+	}
+	input[type="radio"]{
+		display: block;
+		float: left;
+	}
+	input[type="text"]{
+		display: block;
+		width: 50%;
+		float: left;
+	}
+	fieldset {
+		background-color: steelblue;
+		padding-left:2%;
+		padding-right:2%;
+		margin-top: 1%;
+	}
+	.width-40 {
+		width: 40%;
+		margin-bottom: 1%;
+
+	}
+	.float-left {
+		float: left;
+	}
+	.float-right {
+		float: right;
+	}
+	.width-50 {
+		width: 40%;
+	}
+	h1 {
+		color: navy;
+		font-family: calibri;
+	}
+	@media (max-width: 1124px){
+		.clear-both {
+			clear: both;
+			width: 95%;
+			float: left;
+		}
+	}
+	@media (max-width: 750px) {
+		.float-left {
+			clear: both;
+		}
+		input[type="email"] {
+			width: 100%;
+		}
+		input[type="password"] {
+			width: 100%;
+		}
+		input[type="text"] {
+			width: 100%;
+		}
+		input[type="submit"] {
+			width: 100%;
+		}
+		input[type="reset"] {
+			width: 100%;
+		}
+		.width-40 {
+			width: 100%;
+		}
+		.clear-both {
+			clear: both;
+			width: 95%;
+			float: left;
+		}
+
+	}
+</style>
+</html>
